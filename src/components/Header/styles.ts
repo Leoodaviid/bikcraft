@@ -27,6 +27,8 @@ export const Container = styled.header`
         padding: 1rem 0;
         font-size: 18px;
         position: relative;
+        font-family: ${({ theme }) => theme.fontFamily.heading};
+        font-weight: 400;
       }
     }
     li {
