@@ -1,5 +1,11 @@
+import Header from '../../components/Header/Header'
 import { Container } from './styles'
 
 export default function Main() {
-  return <Container>teste</Container>
+  return (
+    <>
+      <Header />
+      <Container></Container>
+    </>
+  )
 }
