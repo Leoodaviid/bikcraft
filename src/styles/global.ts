@@ -1,13 +1,16 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-  html, body, #root {
-    min-height: 100%;
-  }
   body {
-    background: ${(props) => props.theme.colors.gray900};
-    color: ${(props) => props.theme.colors.white};
-    font-family: ${(props) => props.theme.fontFamily.sans};
-    padding: 1rem;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
   }
 `
