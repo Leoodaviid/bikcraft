@@ -31,7 +31,7 @@ declare module 'styled-components' {
     }
     fontFamily: {
       heading: string
-      sans: string
+      rob: string
       mono: string
     }
     fontSize: {
