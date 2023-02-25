@@ -1,3 +1,4 @@
+import { NavLink, Link } from 'react-router-dom'
 import { Container } from './styles'
 import BikcraftIcon from '../../assets/bikcraft.svg'
 
@@ -5,19 +6,19 @@ const Header = () => {
   return (
     <Container>
       <div>
-        <a href='#'>
+        <Link to={'/'}>
           <img src={BikcraftIcon} alt='Bikcraft' />
-        </a>
+        </Link>
         <nav>
           <ul>
             <li>
-              <a href='#'>Bicicletas</a>
+              <NavLink to={'bicicletas'}>Bicicletas</NavLink>
             </li>
             <li>
-              <a href='#'>Seguros</a>
+              <NavLink to={'seguros'}>Seguros</NavLink>
             </li>
             <li>
-              <a href='#'>Contato</a>
+              <NavLink to={'contato'}>Contato</NavLink>
             </li>
           </ul>
         </nav>
