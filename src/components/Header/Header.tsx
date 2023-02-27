@@ -5,7 +5,7 @@ import BikcraftIcon from '../../assets/bikcraft.svg'
 const Header = () => {
   return (
     <Container>
-      <div>
+      <div className='container'>
         <Link to={'/'}>
           <img src={BikcraftIcon} alt='Bikcraft' />
         </Link>
