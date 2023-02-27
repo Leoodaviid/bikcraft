@@ -9,10 +9,7 @@ export const Button = styled(Link)`
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
   color: ${({ theme }) => theme.colors.secondary};
-  font-size: ${({ theme }) => theme.fontSize.lg};
-  line-height: 1.33;
-  font-family: ${({ theme }) => theme.fontFamily.heading};
-  font-weight: 600;
+  font: 600 ${({ theme }) => theme.fontSize.lg} / 1.35 ${({ theme }) => theme.fontFamily.heading};
 
   &:hover {
     background: linear-gradient(#ffb60d, #e59317);

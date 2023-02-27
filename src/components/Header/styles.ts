@@ -8,11 +8,6 @@ export const Container = styled.header`
     gap: 20px;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
-    padding: 20px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
   nav {
     ul {
