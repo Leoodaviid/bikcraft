@@ -1,6 +1,6 @@
 import { NavLink, Link } from 'react-router-dom'
 import { Container } from './styles'
-import BikcraftIcon from '../../assets/bikcraft.svg'
+import BikcraftIcon from '../../assets/icons/bikcraft.svg'
 
 const Header = () => {
   return (

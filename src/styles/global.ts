@@ -48,10 +48,6 @@ export const GlobalStyle = createGlobalStyle`
   .point{
     color: ${({ theme }) => theme.colors.yellow};
   }
-  .sub-title{
-    font: 400 ${({ theme }) => theme.fontSize['2xl']}/1.5
-    ${({ theme }) => theme.fontFamily.rob} ;
-  }
 
   /* Responsivodade */
   @media (max-width: 1200px) {

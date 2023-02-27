@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Section = styled.section`
+export const Introduction = styled.section`
   background: ${({ theme }) => theme.colors.black};
   color: ${({ theme }) => theme.colors.white};
   box-shadow: inset 0 -120px ${({ theme }) => theme.colors.white};
@@ -10,11 +10,12 @@ export const Section = styled.section`
     grid-template-columns: 1fr 1fr;
     gap: 0px 40px;
   }
-  .introducao-conteudo {
+  .introducao-content {
     align-self: end;
     padding-bottom: 12.5rem;
   }
   .introducao img {
+    width: 100%;
     height: 100%;
     object-fit: cover;
   }
@@ -23,7 +24,6 @@ export const Section = styled.section`
   }
   .introducao p {
     margin-bottom: 1.25rem;
-    color: ${({ theme }) => theme.colors.gray600};
   }
 
   @media (max-width: 800px) {
@@ -35,7 +35,7 @@ export const Section = styled.section`
       grid-template-columns: 1fr;
       gap: 2rem;
     }
-    .introducao-conteudo {
+    .introducao-content {
       padding-bottom: 0px;
     }
     .introducao h1 {
@@ -47,7 +47,7 @@ export const Section = styled.section`
     }
   }
 `
-export const Article = styled.article`
+export const List = styled.article`
   padding: 3.75rem 0 7.5rem 0;
   h2 {
     margin-bottom: 2.5rem;
@@ -97,6 +97,79 @@ export const Article = styled.article`
     padding: 0 0 3.5rem 0;
     ul {
       gap: 1.25rem;
+    }
+  }
+`
+export const Technology = styled.article`
+  background-color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.white};
+  box-shadow: inset 0 5rem ${({ theme }) => theme.colors.white},
+    inset 0 -5rem ${({ theme }) => theme.colors.white};
+  .technology {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  .technology-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+  }
+  .techonology-content {
+    padding: 10rem 0;
+  }
+  .techonology-content > span {
+    display: block;
+    font: 500 ${({ theme }) => theme.fontSize.xl} / 1.5 ${({ theme }) => theme.fontFamily.rob};
+    color: ${({ theme }) => theme.colors.gray500};
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+  }
+  .techonology-content h2 {
+    margin-bottom: 2rem;
+  }
+  .techonology-content > p {
+    margin-bottom: 1.25rem;
+  }
+  .techonology-content a {
+    margin-bottom: 5rem;
+  }
+  .technology-benefits {
+    display: flex;
+    gap: 2.5rem;
+  }
+  .technology-benefits img {
+    width: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .technology-benefits h3 {
+    font: 400 ${({ theme }) => theme.fontSize.xl} / 1.35 ${({ theme }) => theme.fontFamily.heading};
+    margin-bottom: 0.5rem;
+    width: max-content;
+  }
+  .technology-benefits p {
+    font: 400 ${({ theme }) => theme.fontSize.base} / 1.5 ${({ theme }) => theme.fontFamily.rob};
+    color: ${({ theme }) => theme.colors.gray500};
+  }
+  @media (max-width: 800px) {
+    box-shadow: initial;
+    .technology {
+      grid-template-columns: 1fr;
+    }
+    .techonology-content {
+      padding: 3.75rem 0;
+    }
+    .technology-img img {
+      display: none;
+    }
+    .techonology-content a {
+      margin-bottom: 3.75rem;
+    }
+  }
+  @media (max-width: 600px) {
+    .technology-benefits {
+      flex-direction: column;
     }
   }
 `
