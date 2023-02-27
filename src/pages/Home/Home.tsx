@@ -1,32 +1,37 @@
-import { Section, Article } from './styles'
-import BikMagic from '../../assets/magic-home.jpg'
-import BikNimbus from '../../assets/nimbus-home.jpg'
-import BikNebula from '../../assets/nebula-home.jpg'
-import IntroducaoImg from '../../assets/introducao.jpg'
-import LinkButton from '../../components/LinkButton/LinkButton'
+import { Introduction, List, Technology } from './styles'
 import { Link } from 'react-router-dom'
+import { BikSubTitle } from '../../components/BikTitle/BikSubTitle'
+import { BikTitle } from '../../components/BikTitle/BikTitle'
+import BikMagic from '../../assets/img/magic-home.jpg'
+import BikNimbus from '../../assets/img/nimbus-home.jpg'
+import BikNebula from '../../assets/img/nebula-home.jpg'
+import IntroducaoImg from '../../assets/img/introducao.jpg'
+import TechnologyImg from '../../assets/img/tecnologia.jpg'
+import LinkButton from '../../components/LinkButton/LinkButton'
+import InconEletrica from '../../assets/icons/eletrica.svg'
+import InconRastreador from '../../assets/icons/rastreador.svg'
 
 const Home = () => {
   return (
     <>
-      <Section>
+      <Introduction>
         <div className='introducao container'>
-          <div className='introducao-conteudo'>
-            <h1 className='title'>
+          <div className='introducao-content'>
+            <BikTitle>
               Bicicletas feitas sob medida<span className='point'>.</span>
-            </h1>
-            <p className='sub-title'>
+            </BikTitle>
+            <BikSubTitle>
               Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você.
               Explore o mundo na sua velocidade com a Bikcraft
-            </p>
+            </BikSubTitle>
             <LinkButton to={'bicicletas'}>Escolha a sua</LinkButton>
           </div>
           <div>
             <img src={IntroducaoImg} alt='Bicicleta elétrica preta' />
           </div>
         </div>
-      </Section>
-      <Article>
+      </Introduction>
+      <List>
         <h2 className='container title'>
           Escolha a sua<span className='point'>.</span>
         </h2>
@@ -53,7 +58,44 @@ const Home = () => {
             </Link>
           </li>
         </ul>
-      </Article>
+      </List>
+      <Technology>
+        <div className='technology container'>
+          <div className='techonology-content'>
+            <span>Tecnologia Avançada</span>
+            <h2 className='title'>
+              Você escolhe as suas cores e componentes<span className='point'>.</span>
+            </h2>
+            <BikSubTitle>
+              Cada Bikcraft é única e possui a sua identidade. As medidas serão exataspara o seu
+              corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode
+              também personalizar complemtamente as suas cores.
+            </BikSubTitle>
+            <LinkButton to={'bicicletas'}>Escolha um modelo</LinkButton>
+            <div className='technology-benefits'>
+              <div>
+                <img src={InconEletrica} alt='' />
+                <h3>Motor Elétrico</h3>
+                <p>
+                  Toda Bikcraft é equipada com um motor elétrico que possui duraçao de até 120h. A
+                  bateria é recarregada com a sua energia gasta ao pedalar.
+                </p>
+              </div>
+              <div>
+                <img src={InconRastreador} alt='' />
+                <h3>Rastreador</h3>
+                <p>
+                  Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e
+                  sistemas anti-furto para garantir o seu sossego.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className='technology-img'>
+            <img src={TechnologyImg} alt='' />
+          </div>
+        </div>
+      </Technology>
     </>
   )
 }
