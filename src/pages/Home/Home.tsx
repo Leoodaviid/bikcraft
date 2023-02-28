@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { PartnersItems } from '../../components/Partners/PartnersItems'
 import { BikSubTitle } from '../../components/BikTitle/BikSubTitle'
 import { BikTitle } from '../../components/BikTitle/BikTitle'
+import { SafeItems } from '../../components/SafeItems/SafeItems'
+import { Head } from '../../components/Head/Head'
 import BikMagic from '../../assets/img/magic-home.jpg'
 import BikNimbus from '../../assets/img/nimbus-home.jpg'
 import BikNebula from '../../assets/img/nebula-home.jpg'
@@ -12,11 +14,14 @@ import TechnologyImg from '../../assets/img/tecnologia.jpg'
 import LinkButton from '../../components/LinkButton/LinkButton'
 import InconEletrica from '../../assets/icons/eletrica.svg'
 import InconRastreador from '../../assets/icons/rastreador.svg'
-import { SafeItems } from '../../components/SafeItems/SafeItems'
 
 const Home = () => {
   return (
     <>
+      <Head
+        title='Bicicletas sob medida.'
+        description='Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.'
+      />
       <Introduction aria-label='Introdução'>
         <div className='introducao container'>
           <div className='introducao-content'>

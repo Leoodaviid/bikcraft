@@ -1,9 +1,11 @@
+import { Head } from '../../components/Head/Head'
 import { UseTitle } from '../../components/Title/useTitle'
 import { Container } from './styles'
 
 const Termos = () => {
   return (
     <>
+      <Head title='Termos' description='Termos de uso' />
       <UseTitle />
       <Container className='terms container'>
         <h2>1. Política de estornos</h2>
