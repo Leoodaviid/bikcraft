@@ -173,3 +173,15 @@ export const Technology = styled.article`
     }
   }
 `
+export const Partners = styled.section`
+  padding: 3.75rem 0 7.5rem 0;
+  h2 {
+    margin-bottom: 3.75rem;
+  }
+  @media (max-width: 800px) {
+    padding: 3.75rem 0 3.75rem 0;
+    h2 {
+      margin-bottom: 1.25rem;
+    }
+  }
+`

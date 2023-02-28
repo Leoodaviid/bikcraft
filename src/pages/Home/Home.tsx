@@ -1,5 +1,6 @@
-import { Introduction, List, Technology } from './styles'
+import { Introduction, List, Technology, Partners } from './styles'
 import { Link } from 'react-router-dom'
+import { PartnersItems } from '../../components/Partners/PartnersItems'
 import { BikSubTitle } from '../../components/BikTitle/BikSubTitle'
 import { BikTitle } from '../../components/BikTitle/BikTitle'
 import BikMagic from '../../assets/img/magic-home.jpg'
@@ -14,7 +15,7 @@ import InconRastreador from '../../assets/icons/rastreador.svg'
 const Home = () => {
   return (
     <>
-      <Introduction>
+      <Introduction aria-label='Introdução'>
         <div className='introducao container'>
           <div className='introducao-content'>
             <BikTitle>
@@ -96,6 +97,12 @@ const Home = () => {
           </div>
         </div>
       </Technology>
+      <Partners aria-label='Nossos Parceiros'>
+        <h2 className='title container'>
+          Nossos parceiros<span className='point'>.</span>
+        </h2>
+        <PartnersItems />
+      </Partners>
     </>
   )
 }
