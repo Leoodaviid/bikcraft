@@ -5,5 +5,10 @@ interface TitleProps {
   children: ReactNode
 }
 export const BikTitle = ({ children }: TitleProps) => {
-  return <Title>{children}</Title>
+  return (
+    <Title>
+      {children}
+      <span className='point'>.</span>
+    </Title>
+  )
 }
