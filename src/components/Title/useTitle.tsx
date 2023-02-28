@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom'
 import { BikTitle } from '../BikTitle/BikTitle'
 import { Container } from './styles'
 
-const UseTitle = () => {
+export const UseTitle = () => {
   const [title, setTitle] = useState('')
   const [paragraph, setParagraph] = useState('')
   const location = useLocation()
@@ -29,5 +29,3 @@ const UseTitle = () => {
     </Container>
   )
 }
-
-export default UseTitle
