@@ -4,7 +4,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 600px;
   }
   ::-webkit-scrollbar{
   width: 10px;
