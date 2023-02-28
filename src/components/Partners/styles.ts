@@ -23,6 +23,9 @@ export const Partner = styled.ul`
   }
   @media (max-width: 800px) {
     grid-template-columns: repeat(2, 1fr);
+    li {
+      padding: 1.25rem;
+    }
     li:nth-child(n + 3) {
       border-top: 2px solid ${({ theme }) => theme.colors.gray200};
     }

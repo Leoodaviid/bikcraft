@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.header`
   background-color: ${({ theme }) => theme.colors.black};
   div {
+    padding: 1.25rem 1.25rem;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
