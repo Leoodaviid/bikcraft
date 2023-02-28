@@ -20,9 +20,7 @@ const Home = () => {
       <Introduction aria-label='Introdução'>
         <div className='introducao container'>
           <div className='introducao-content'>
-            <BikTitle>
-              Bicicletas feitas sob medida<span className='point'>.</span>
-            </BikTitle>
+            <BikTitle>Bicicletas feitas sob medida</BikTitle>
             <BikSubTitle>
               Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você.
               Explore o mundo na sua velocidade com a Bikcraft
