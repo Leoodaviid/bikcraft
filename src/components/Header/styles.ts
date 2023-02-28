@@ -32,7 +32,7 @@ export const Container = styled.header`
         display: block;
         height: 2px;
         width: 0px;
-        background: ${({ theme }) => theme.colors.white};
+        background: ${({ theme }) => theme.colors.yellow};
         margin-top: 4px;
         transition: 0.3s;
         position: absolute;
