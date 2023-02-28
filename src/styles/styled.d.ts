@@ -28,11 +28,12 @@ declare module 'styled-components' {
       gray900: string
       primary: string
       secondary: string
+      tertiary: string
     }
     fontFamily: {
       heading: string
       rob: string
-      mono: string
+      meri: string
     }
     fontSize: {
       xs: string

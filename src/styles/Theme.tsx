@@ -33,11 +33,12 @@ export const theme: DefaultTheme = {
     gray900: '#141518',
     primary: '#F83600',
     secondary: '#332200',
+    tertiary: '#e4a30b',
   },
   fontFamily: {
     heading: ['Poppins', 'sans-serif'].join(','),
     rob: ['Roboto', 'Helvetica', 'sans-serif'].join(','),
-    mono: ['IBM Plex Mono', 'serif'].join(','),
+    meri: ['Merriweather', 'serif'].join(','),
   },
   fontSize: {
     xs: rem(10),
