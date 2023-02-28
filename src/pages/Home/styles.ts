@@ -236,8 +236,8 @@ export const Testimony = styled.section`
 export const Safe = styled.article`
   background-color: ${({ theme }) => theme.colors.black};
   color: ${({ theme }) => theme.colors.white};
+  padding: 3.75rem 0 3.75rem 0;
   .safe {
-    padding: 3.75rem 0 3.75rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;

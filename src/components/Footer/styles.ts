@@ -3,11 +3,11 @@ import styled from 'styled-components'
 export const Container = styled.footer`
   background-color: ${({ theme }) => theme.colors.black};
   color: ${({ theme }) => theme.colors.white};
+  padding: 3.75rem 0 3.75rem 0;
   .footer {
     display: grid;
     grid-template-columns: 3fr 5fr 4fr;
     gap: 2.5rem;
-    padding: 3.75rem 0 3.75rem 0;
   }
   .footer h3 {
     margin-bottom: 2rem;
