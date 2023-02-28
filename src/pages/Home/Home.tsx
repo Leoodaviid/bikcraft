@@ -1,4 +1,4 @@
-import { Introduction, List, Technology, Partners } from './styles'
+import { Introduction, List, Technology, Partners, Testimony, Safe } from './styles'
 import { Link } from 'react-router-dom'
 import { PartnersItems } from '../../components/Partners/PartnersItems'
 import { BikSubTitle } from '../../components/BikTitle/BikSubTitle'
@@ -6,11 +6,13 @@ import { BikTitle } from '../../components/BikTitle/BikTitle'
 import BikMagic from '../../assets/img/magic-home.jpg'
 import BikNimbus from '../../assets/img/nimbus-home.jpg'
 import BikNebula from '../../assets/img/nebula-home.jpg'
+import DepoimentoImg from '../../assets/img/depoimento.jpg'
 import IntroducaoImg from '../../assets/img/introducao.jpg'
 import TechnologyImg from '../../assets/img/tecnologia.jpg'
 import LinkButton from '../../components/LinkButton/LinkButton'
 import InconEletrica from '../../assets/icons/eletrica.svg'
 import InconRastreador from '../../assets/icons/rastreador.svg'
+import { SafeItems } from '../../components/SafeItems/SafeItems'
 
 const Home = () => {
   return (
@@ -103,6 +105,50 @@ const Home = () => {
         </h2>
         <PartnersItems />
       </Partners>
+      <Testimony aria-label='Depoimento'>
+        <div>
+          <img src={DepoimentoImg} alt='Pessoa pedalando uma biciceta Bikcraft' />
+        </div>
+        <div className='testimony-content'>
+          <blockquote>
+            <p>
+              Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o
+              meu amor por esta atividade. Recomendo à todos que amo.
+            </p>
+          </blockquote>
+          <span>Ana Júlia</span>
+        </div>
+      </Testimony>
+      <Safe>
+        <div className='safe container'>
+          <h2 className='title'>
+            Seguros<span className='point'>.</span>
+          </h2>
+          <SafeItems
+            level='prata'
+            price='R$199'
+            benefits={[
+              'Duas trocas por ano',
+              'Assistência técnica',
+              'Suporte 08h ás 18h',
+              'Cobertura estadual',
+            ]}
+            button='secondary'
+          />
+          <SafeItems
+            level='ouro'
+            price='R$299'
+            benefits={[
+              'Cinco trocas por ano',
+              'Assistência especial',
+              'Suporte 24h',
+              'Cobertura nacional',
+              'Desconto em parceiros',
+              'Acesso ao clube Bikcraft',
+            ]}
+          />
+        </div>
+      </Safe>
     </>
   )
 }
