@@ -5,7 +5,10 @@ import { UseTitle } from '../../components/Title/useTitle'
 const Bicicletas = () => {
   return (
     <>
-      <Head title='Bicicletas' />
+      <Head
+        title='Bicicletas'
+        description='Bicicletas elétricas de alta qualidade, muito mais performace na hora do pedal'
+      />
       <UseTitle />
       <BikList />
     </>
