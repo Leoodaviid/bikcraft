@@ -4,6 +4,7 @@ import IconSvg from '../../assets/icons/lista.svg'
 
 export const Safe = styled.div<SafeItemsProps>`
   background-color: ${({ theme }) => theme.colors.gray900};
+  border-radius: 0.25rem;
   padding: 2rem 2rem 2rem 3.75rem;
   display: grid;
   grid-template-columns: 1fr auto;
