@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
   background: ${({ theme }) => theme.colors.yellow};
   border-radius: 10px;
   }
-  h1,h2, h3, h4, ul, p, blockquote{
+  h1,h2, h3, h4, ul, p, blockquote, dd{
     margin: 0px;
   }
   ul{
