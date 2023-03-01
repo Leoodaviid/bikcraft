@@ -1,10 +1,15 @@
 import { ReactNode } from 'react'
 import { SubTitle } from './styles'
 
-interface SubTitleProps {
+interface TitleProps {
   children: ReactNode
+  className?: string
 }
-
-export const BikSubTitle = ({ children }: SubTitleProps) => {
-  return <SubTitle>{children}</SubTitle>
+export const BikSubTitle = ({ children, className }: TitleProps) => {
+  return (
+    <SubTitle className={className}>
+      {children}
+      <span className='point'>.</span>
+    </SubTitle>
+  )
 }
