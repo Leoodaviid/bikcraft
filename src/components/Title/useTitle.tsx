@@ -19,6 +19,10 @@ export const UseTitle = () => {
         setParagraph('Escolha a melhor para Você')
         setTitle('Nossas bicicletas')
         break
+      case '/seguros':
+        setParagraph('Escolha o seguro')
+        setTitle('Você seguro')
+        break
       default:
         setParagraph('')
         setTitle('')
