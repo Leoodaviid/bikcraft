@@ -1,7 +1,7 @@
 import { Introduction, List, Technology, Partners, Testimony, Safe } from './styles'
 import { Link } from 'react-router-dom'
 import { PartnersItems } from '../../components/Partners/PartnersItems'
-import { BikSubTitle } from '../../components/BikTitle/BikSubTitle'
+import { BikText } from '../../components/BikTitle/BikText'
 import { BikTitle } from '../../components/BikTitle/BikTitle'
 import { SafeItems } from '../../components/SafeItems/SafeItems'
 import { Head } from '../../components/Head/Head'
@@ -14,6 +14,7 @@ import TechnologyImg from '../../assets/img/tecnologia.jpg'
 import LinkButton from '../../components/LinkButton/LinkButton'
 import InconEletrica from '../../assets/icons/eletrica.svg'
 import InconRastreador from '../../assets/icons/rastreador.svg'
+import { BikSubTitle } from '../../components/BikTitle/BikSubTitle'
 
 const Home = () => {
   return (
@@ -26,10 +27,10 @@ const Home = () => {
         <div className='introducao container'>
           <div className='introducao-content'>
             <BikTitle>Bicicletas feitas sob medida</BikTitle>
-            <BikSubTitle>
+            <BikText>
               Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você.
               Explore o mundo na sua velocidade com a Bikcraft
-            </BikSubTitle>
+            </BikText>
             <LinkButton to={'bicicletas'}>Escolha a sua</LinkButton>
           </div>
           <div>
@@ -38,9 +39,7 @@ const Home = () => {
         </div>
       </Introduction>
       <List>
-        <h2 className='container title'>
-          Escolha a sua<span className='point'>.</span>
-        </h2>
+        <BikSubTitle className='container'>Escolha a sua</BikSubTitle>
         <ul>
           <li>
             <Link to='bicicletas/magic'>
@@ -69,14 +68,12 @@ const Home = () => {
         <div className='technology container'>
           <div className='techonology-content'>
             <span>Tecnologia Avançada</span>
-            <h2 className='title'>
-              Você escolhe as suas cores e componentes<span className='point'>.</span>
-            </h2>
-            <BikSubTitle>
+            <BikSubTitle>Você escolhe as suas cores e componentes</BikSubTitle>
+            <BikText>
               Cada Bikcraft é única e possui a sua identidade. As medidas serão exataspara o seu
               corpo e altura, garantindo maior conforto e ergonomia na sua pedalada. Você pode
               também personalizar complemtamente as suas cores.
-            </BikSubTitle>
+            </BikText>
             <LinkButton to={'bicicletas'}>Escolha um modelo</LinkButton>
             <div className='technology-benefits'>
               <div>
@@ -103,9 +100,7 @@ const Home = () => {
         </div>
       </Technology>
       <Partners aria-label='Nossos Parceiros'>
-        <h2 className='title container'>
-          Nossos parceiros<span className='point'>.</span>
-        </h2>
+        <BikSubTitle className='container'>Nossos parceiros</BikSubTitle>
         <PartnersItems />
       </Partners>
       <Testimony aria-label='Depoimento'>
@@ -124,9 +119,7 @@ const Home = () => {
       </Testimony>
       <Safe>
         <div className='safe container'>
-          <h2 className='title'>
-            Seguros<span className='point'>.</span>
-          </h2>
+          <BikSubTitle>Seguros</BikSubTitle>
           <SafeItems
             level='prata'
             price='R$199'
