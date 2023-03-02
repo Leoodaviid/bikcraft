@@ -108,3 +108,48 @@ export const Container = styled.div`
     }
   }
 `
+export const Ul = styled.ul`
+  display: flex;
+  gap: 2.5rem;
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow-x: auto;
+  li {
+    flex: 1;
+    min-width: 280px;
+  }
+  span {
+    padding-left: 1.25rem;
+    font: 500 ${({ theme }) => theme.fontSize.base} / 1.35 ${({ theme }) => theme.fontFamily.rob};
+    color: ${({ theme }) => theme.colors.gray600};
+  }
+  a {
+    display: block;
+  }
+  img {
+    margin-bottom: 1rem;
+    display: block;
+  }
+  h3 {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  h3::before {
+    content: '';
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.75rem;
+    margin-right: 0.5rem;
+    background-color: ${({ theme }) => theme.colors.yellow};
+    transition: width 0.2s;
+  }
+  a:hover h3::before {
+    width: 1.5rem;
+  }
+
+  @media (max-width: 800px) {
+    gap: 1.25rem;
+  }
+`
