@@ -1,5 +1,5 @@
 import { Safe } from './styles'
-import LinkButton from '../LinkButton/LinkButton'
+import { LinkButton } from '../LinkButton/LinkButton'
 
 export interface SafeItemsProps {
   level?: string
