@@ -11,13 +11,7 @@ const Nimbus = () => {
     <>
       <Head title='Nimbus' />
       <UseTitle />
-      <Bik
-        BikNumber={0}
-        text={
-          'A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.'
-        }
-        km={50}
-      />
+      <Bik BikNumber={0} name={'Nimbus Stark'} km={50} />
       <Article>
         <BikSubTitle className='container'>Escolha a sua</BikSubTitle>
         <BikListHome />
