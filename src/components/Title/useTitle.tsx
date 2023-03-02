@@ -27,6 +27,14 @@ export const UseTitle = () => {
         setParagraph('R$ 4999')
         setTitle('Nimbus Stark')
         break
+      case '/bicicletas/magic':
+        setParagraph('R$ 2499')
+        setTitle('Magic Might')
+        break
+      case '/bicicletas/nebula':
+        setParagraph('R$ 3999')
+        setTitle('Nebula Cosmic')
+        break
       default:
         setParagraph('')
         setTitle('')
