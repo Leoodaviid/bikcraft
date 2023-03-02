@@ -1,20 +1,17 @@
-import { Introduction, List, Technology, Partners, Testimony, Safe } from './styles'
-import { Link } from 'react-router-dom'
+import { Introduction, Article, Technology, Partners, Testimony, Safe } from './styles'
+import { LinkButton } from '../../components/LinkButton/LinkButton'
 import { PartnersItems } from '../../components/Partners/PartnersItems'
+import { BikSubTitle } from '../../components/BikTitle/BikSubTitle'
 import { BikText } from '../../components/BikTitle/BikText'
 import { BikTitle } from '../../components/BikTitle/BikTitle'
-import { SafeItems } from '../../components/SafeItems/SafeItems'
+import { SafeItems } from '../../components/Safe/SafeItems'
 import { Head } from '../../components/Head/Head'
-import BikMagic from '../../assets/img/magic-home.jpg'
-import BikNimbus from '../../assets/img/nimbus-home.jpg'
-import BikNebula from '../../assets/img/nebula-home.jpg'
+import { BikListHome } from '../../components/BikList/BikListHome'
 import DepoimentoImg from '../../assets/img/depoimento.jpg'
 import IntroducaoImg from '../../assets/img/introducao.jpg'
 import TechnologyImg from '../../assets/img/tecnologia.jpg'
-import LinkButton from '../../components/LinkButton/LinkButton'
 import InconEletrica from '../../assets/icons/eletrica.svg'
 import InconRastreador from '../../assets/icons/rastreador.svg'
-import { BikSubTitle } from '../../components/BikTitle/BikSubTitle'
 
 const Home = () => {
   return (
@@ -38,32 +35,10 @@ const Home = () => {
           </div>
         </div>
       </Introduction>
-      <List>
+      <Article>
         <BikSubTitle className='container'>Escolha a sua</BikSubTitle>
-        <ul>
-          <li>
-            <Link to='bicicletas/magic'>
-              <img src={BikMagic} alt='Bicicleta preta' />
-              <h3>Magic Might</h3>
-              <span>R$ 2499</span>
-            </Link>
-          </li>
-          <li>
-            <Link to='bicicletas/nimbus'>
-              <img src={BikNimbus} alt='Bicicleta preta' />
-              <h3>Nimbus Stark Might</h3>
-              <span>R$ 4999</span>
-            </Link>
-          </li>
-          <li>
-            <Link to='bicicletas/nebula'>
-              <img src={BikNebula} alt='Bicicleta preta' />
-              <h3>Nebula Cosmic</h3>
-              <span>R$ 3999</span>
-            </Link>
-          </li>
-        </ul>
-      </List>
+        <BikListHome />
+      </Article>
       <Technology>
         <div className='technology container'>
           <div className='techonology-content'>
