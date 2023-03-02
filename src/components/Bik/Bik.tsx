@@ -7,14 +7,15 @@ import InconEletrica from '../../assets/icons/eletrica.svg'
 import InconCarbono from '../../assets/icons/carbono.svg'
 import InconVelocidade from '../../assets/icons/velocidade.svg'
 import InconRastreador from '../../assets/icons/rastreador.svg'
+import { BikText } from '../BikTitle/BikText'
 
 interface BikProps {
   BikNumber: number
-  text: string
+  name: string
   km: number
 }
 
-export const Bik = ({ BikNumber, text, km }: BikProps) => {
+export const Bik = ({ BikNumber, name, km }: BikProps) => {
   return (
     <Container>
       <div className='bik container'>
@@ -24,7 +25,10 @@ export const Bik = ({ BikNumber, text, km }: BikProps) => {
           ))}
         </div>
         <div className='bik-content'>
-          <p>{text}</p>
+          <BikText>
+            A {name} é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os
+            melhores acessórios, o que garante maior velocidade.
+          </BikText>
           <div className='bik-sale'>
             <LinkButton to='orcamento'>Comprar agora</LinkButton>
             <span>
