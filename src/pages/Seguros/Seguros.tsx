@@ -1,7 +1,7 @@
 import { Head } from '../../components/Head/Head'
 import { UseTitle } from '../../components/Title/useTitle'
 import { Safe } from '../Home/styles'
-import { SafeItems } from '../../components/SafeItems/SafeItems'
+import { SafeItems } from '../../components/Safe/SafeItems'
 import { Benefits, Questions } from './styles'
 import { BikSubTitle } from '../../components/BikTitle/BikSubTitle'
 import { BenefitsList } from '../../components/BenefitsList/BenefitsList'

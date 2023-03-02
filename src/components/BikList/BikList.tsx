@@ -1,11 +1,11 @@
 import { Container } from './styles'
-import { ReactComponent as Seta } from '../../assets/icons/seta.svg'
+import { LinkButton } from '../LinkButton/LinkButton'
 import { Biks } from '../Helper/BiksList'
+import { ReactComponent as Seta } from '../../assets/icons/seta.svg'
 import InconEletrica from '../../assets/icons/eletrica.svg'
 import InconCarbono from '../../assets/icons/carbono.svg'
 import InconVelocidade from '../../assets/icons/velocidade.svg'
 import InconRastreador from '../../assets/icons/rastreador.svg'
-import LinkButton from '../LinkButton/LinkButton'
 
 const BikList = () => {
   return (

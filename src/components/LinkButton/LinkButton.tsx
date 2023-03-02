@@ -6,12 +6,10 @@ interface ButtonLinkProps {
   to: string
   children: ReactNode
 }
-const LinkButton = ({ className, to, children }: ButtonLinkProps) => {
+export const LinkButton = ({ className, to, children }: ButtonLinkProps) => {
   return (
     <Button className={className} to={to}>
       {children}
     </Button>
   )
 }
-
-export default LinkButton
