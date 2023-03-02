@@ -24,7 +24,6 @@ export const Container = styled.div`
   }
   .bik-content > p {
     margin-bottom: 2rem;
-    font: 400 ${({ theme }) => theme.fontSize['2xl']} / 1.5 ${({ theme }) => theme.fontFamily.rob};
   }
   .bik-sale {
     display: grid;

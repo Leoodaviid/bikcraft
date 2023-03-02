@@ -17,7 +17,6 @@ export const Container = styled.div`
     padding: 2.5rem 0 2.5rem 0;
     .titulo p {
       font-size: 1rem;
-      text-transform: lowercase;
     }
   }
 `
