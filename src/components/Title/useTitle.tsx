@@ -23,6 +23,10 @@ export const UseTitle = () => {
         setParagraph('Escolha o seguro')
         setTitle('Você seguro')
         break
+      case '/bicicletas/nimbus':
+        setParagraph('R$ 4999')
+        setTitle('Nimbus Stark')
+        break
       default:
         setParagraph('')
         setTitle('')
