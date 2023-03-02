@@ -64,3 +64,41 @@ export const Safe = styled.div<SafeItemsProps>`
     grid-column: 1/-1;
   }
 `
+
+export const Banner = styled.article`
+  background-color: ${({ theme }) => theme.colors.black};
+  box-shadow: inset 0 7.5rem ${({ theme }) => theme.colors.white},
+    inset 0 -7.5rem ${({ theme }) => theme.colors.black};
+  h2 {
+    color: ${({ theme }) => theme.colors.white};
+  }
+  .safe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  .safe-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .safe-content {
+    padding: 11.25rem 0 11.25rem 0;
+  }
+  .safe h2 {
+    margin-bottom: 2rem;
+  }
+  .safe p {
+    margin-bottom: 1.25rem;
+  }
+  @media (max-width: 800px) {
+    box-shadow: inset 0 -3.75rem ${({ theme }) => theme.colors.black};
+    .safe {
+      grid-template-columns: 1fr;
+    }
+    .safe-content {
+      grid-row: 1;
+      padding: 2.5rem 0 0 0;
+    }
+  }
+`
