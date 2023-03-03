@@ -66,7 +66,7 @@ const Contato = () => {
         </div>
       </Container>
       <Article>
-        <BikSubTitle className='container'>Lojas Locais</BikSubTitle>
+        <BikSubTitle className='container'>Lojas locais</BikSubTitle>
         <div className='store container'>
           <div className='store-item'>
             <img

@@ -44,6 +44,7 @@ export const Container = styled.div`
   address a {
     display: block;
     max-width: max-content;
+    font: 400 ${({ theme }) => theme.fontSize.base} / 1.5 ${({ theme }) => theme.fontFamily.rob};
     margin-bottom: 0.5rem;
     padding-left: 1.75rem;
   }
@@ -129,15 +130,28 @@ export const Article = styled.article`
     gap: 2rem 1rem;
     padding: 2rem;
   }
+  .store-content h3 {
+    font: 600 ${({ theme }) => theme.fontSize['3xl']} / 1.25
+      ${({ theme }) => theme.fontFamily.heading};
+  }
   .store-content h3,
   .store-time {
     grid-column: 1/-1;
+  }
+  .store-data a,
+  .store-data p {
+    font: 400 ${({ theme }) => theme.fontSize.base} / 1.5 ${({ theme }) => theme.fontFamily.rob};
+    color: ${({ theme }) => theme.colors.gray600};
   }
   .store-data {
     display: grid;
     gap: 0.5rem;
     border-left: 2px solid ${({ theme }) => theme.colors.gray200};
     padding-left: 0.75rem;
+  }
+  .store-time {
+    font: 400 ${({ theme }) => theme.fontSize.base} / 1.5 ${({ theme }) => theme.fontFamily.rob};
+    color: ${({ theme }) => theme.colors.gray700};
   }
   .store-time {
     display: flex;
@@ -151,6 +165,9 @@ export const Article = styled.article`
     }
     .store {
       gap: 1.25rem;
+    }
+    .store-content h3 {
+      font-size: ${({ theme }) => theme.fontSize['2xl']};
     }
     .store-content {
       grid-template-columns: 1fr;
