@@ -35,6 +35,10 @@ export const UseTitle = () => {
         setParagraph('R$ 3999')
         setTitle('Nebula Cosmic')
         break
+      case '/contato':
+        setParagraph('Resposta em até 24h')
+        setTitle('Nosso contato')
+        break
       default:
         setParagraph('')
         setTitle('')
