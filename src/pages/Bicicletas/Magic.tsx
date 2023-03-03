@@ -1,4 +1,3 @@
-import React from 'react'
 import { Article } from '../Home/styles'
 import { Bik } from '../../components/Bik/Bik'
 import { Head } from '../../components/Head/Head'
