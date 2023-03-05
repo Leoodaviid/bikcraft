@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import BottomRight from '../../assets/icons/bottom-right.svg'
+import BottomLeft from '../../assets/icons/bottom-left.svg'
 
 export const Container = styled.section`
   background: linear-gradient(
@@ -33,7 +35,8 @@ export const Container = styled.section`
   }
   .budget-product {
     border-radius: 5px 0 0 5px;
-    background-color: ${({ theme }) => theme.colors.gray900};
+    background: ${({ theme }) => theme.colors.gray900} url(${BottomLeft}) no-repeat bottom 20px left
+      20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.25rem;
@@ -97,7 +100,8 @@ export const Container = styled.section`
   }
   .budget-data {
     border-radius: 0 5px 5px 0;
-    background-color: ${({ theme }) => theme.colors.white};
+    background: ${({ theme }) => theme.colors.white} url(${BottomRight}) no-repeat bottom 20px right
+      20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.25rem;
@@ -147,6 +151,7 @@ export const Container = styled.section`
     }
     .budget-data {
       border-radius: 0 0 5px 5px;
+      background: ${({ theme }) => theme.colors.gray900};
     }
   }
   @media (max-width: 600px) {

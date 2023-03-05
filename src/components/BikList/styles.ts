@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import TopRight from '../../assets/icons/top-right.svg'
 
 export const Container = styled.div`
   color: ${({ theme }) => theme.colors.gray600};
@@ -17,6 +18,7 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
+    background: url(${TopRight}) no-repeat top right;
   }
   .bik-image {
     display: grid;

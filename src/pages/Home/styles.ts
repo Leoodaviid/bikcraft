@@ -1,7 +1,10 @@
 import styled from 'styled-components'
+import BottonLeft from '../../assets/icons/bottom-left.svg'
+import BottonRight from '../../assets/icons/bottom-right.svg'
 
 export const Introduction = styled.section`
-  background: ${({ theme }) => theme.colors.black};
+  background: ${({ theme }) => theme.colors.black} url(${BottonLeft}) no-repeat bottom 160px left
+    20px;
   color: ${({ theme }) => theme.colors.white};
   box-shadow: inset 0 -120px ${({ theme }) => theme.colors.white};
 
@@ -157,14 +160,19 @@ export const Testimony = styled.section`
   .testimony-content {
     padding: 2.5rem 2.5rem 5rem 5rem;
     align-self: end;
+    background: url(${BottonRight}) no-repeat bottom 40px right 40px;
   }
   .testimony-content p {
-    /* max-width: 32ch; */
+    max-width: 32ch;
     font: 900 ${({ theme }) => theme.fontSize['3xl']} / 1.25 ${({ theme }) => theme.fontFamily.meri};
     font-style: italic;
     color: ${({ theme }) => theme.colors.secondary};
     margin-bottom: 2rem;
     position: relative;
+  }
+  span {
+    font: 400 ${({ theme }) => theme.fontSize.xl} / 1.35 ${({ theme }) => theme.fontFamily.heading};
+    color: ${({ theme }) => theme.colors.secondary};
   }
   .testimony-content p::before,
   .testimony-content p::after {
@@ -179,6 +187,11 @@ export const Testimony = styled.section`
   }
   .testimony-content p::after {
     content: '”';
+  }
+  @media (min-width: 1200px) {
+    div > img {
+      max-height: 520px;
+    }
   }
   @media (max-width: 800px) {
     grid-template-columns: 1fr;

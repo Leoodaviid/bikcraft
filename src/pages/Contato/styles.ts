@@ -2,6 +2,8 @@ import styled from 'styled-components'
 import IconLocal from '../../assets/icons/local.svg'
 import IconEmain from '../../assets/icons/email.svg'
 import IconPhone from '../../assets/icons/telefone.svg'
+import BottomLeft from '../../assets/icons/bottom-left.svg'
+import BottomRight from '../../assets/icons/bottom-right.svg'
 
 export const Container = styled.div`
   padding-bottom: 0.5rem;
@@ -22,11 +24,13 @@ export const Container = styled.div`
     font: 400 ${({ theme }) => theme.fontSize.base} / 1.5 ${({ theme }) => theme.fontFamily.rob};
     color: ${({ theme }) => theme.colors.gray500};
     border-radius: 5px 0 0 5px;
-    background: ${({ theme }) => theme.colors.gray900};
+    background: ${({ theme }) => theme.colors.gray900} url(${BottomLeft}) no-repeat bottom 20px left
+      20px;
   }
   .contact-form {
     border-radius: 0 5px 5px 0;
-    background: ${({ theme }) => theme.colors.white};
+    background: ${({ theme }) => theme.colors.white} url(${BottomRight}) no-repeat bottom 20px right
+      20px;
   }
   .contact-data h2 {
     font: 400 ${({ theme }) => theme.fontSize.xl} / 1.35 ${({ theme }) => theme.fontFamily.heading};
@@ -76,6 +80,7 @@ export const Container = styled.div`
     }
     .contact-data {
       border-radius: 5px 5px 0 0;
+      background: ${({ theme }) => theme.colors.gray900};
     }
     .contact-form {
       border-radius: 0 0 5px 5px;

@@ -50,7 +50,7 @@ export const UseTitle = () => {
   }, [location])
   return (
     <Container>
-      <div className='titulo container'>
+      <div className='title container'>
         <p>{paragraph}</p>
         <BikTitle>{title}</BikTitle>
       </div>
