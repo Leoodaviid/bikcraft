@@ -39,6 +39,10 @@ export const UseTitle = () => {
         setParagraph('Resposta em até 24h')
         setTitle('Nosso contato')
         break
+      case '/orcamento':
+        setParagraph('Cotações no seu email')
+        setTitle('Solicite um orçamento')
+        break
       default:
         setParagraph('')
         setTitle('')
