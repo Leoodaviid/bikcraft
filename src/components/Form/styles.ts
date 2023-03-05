@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Div = styled.div`
   label {
     display: block;
-    font: 600 ${({ theme }) => theme.fontSize.base} / 1.5 ${({ theme }) => theme.fontFamily.heading};
+    font: 400 ${({ theme }) => theme.fontSize.base} / 1.5 ${({ theme }) => theme.fontFamily.heading};
     margin-bottom: 0.25rem;
   }
   input[type='text'],

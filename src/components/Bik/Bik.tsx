@@ -30,7 +30,7 @@ export const Bik = ({ BikNumber, name, km }: BikProps) => {
             melhores acessórios, o que garante maior velocidade.
           </BikText>
           <div className='bik-sale'>
-            <LinkButton to='orcamento'>Comprar agora</LinkButton>
+            <LinkButton to='/orcamento'>Comprar agora</LinkButton>
             <span>
               <img src={EntregaIcon} /> entrega em 5 dias
             </span>
