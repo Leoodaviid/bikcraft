@@ -7,7 +7,7 @@ const Header = () => {
     <Container>
       <div className='container'>
         <Link to={'/'}>
-          <img src={BikcraftIcon} alt='Bikcraft' />
+          <img src={BikcraftIcon} width='136' height='32' alt='Bikcraft' />
         </Link>
         <nav>
           <ul>

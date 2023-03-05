@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <Container>
       <div className='footer container'>
-        <img src={BikcraftIcon} alt='Bikcraft' />
+        <img src={BikcraftIcon} width='136' height='32' alt='Bikcraft' />
         <div className='contact'>
           <h3>Contato</h3>
           <ul>
@@ -23,14 +23,14 @@ const Footer = () => {
             <li>Fortaleza - CE</li>
           </ul>
           <div className='social-media'>
-            <a href=''>
-              <img src={InstagramIcon} alt='Instagram' />
+            <a href='https://www.instagram.com/'>
+              <img src={InstagramIcon} width='32' height='32' alt='Instagram' />
             </a>
-            <a href=''>
-              <img src={FacebookIcon} alt='Facebook' />
+            <a href='https://pt-br.facebook.com/'>
+              <img src={FacebookIcon} width='32' height='32' alt='Facebook' />
             </a>
-            <a href=''>
-              <img src={YouTubeIcon} alt='Youtube' />
+            <a href='https://www.youtube.com/'>
+              <img src={YouTubeIcon} width='32' height='32' alt='Youtube' />
             </a>
           </div>
         </div>

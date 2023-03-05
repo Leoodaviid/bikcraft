@@ -9,6 +9,7 @@ import { Head } from '../../components/Head/Head'
 import { BikListHome } from '../../components/BikList/BikListHome'
 import DepoimentoImg from '../../assets/img/depoimento.jpg'
 import IntroducaoImg from '../../assets/img/introducao.jpg'
+import NimbusImg from '../../assets/img/nimbus.jpg'
 import TechnologyImg from '../../assets/img/tecnologia.jpg'
 import InconEletrica from '../../assets/icons/eletrica.svg'
 import InconRastreador from '../../assets/icons/rastreador.svg'
@@ -30,9 +31,10 @@ const Home = () => {
             </BikText>
             <LinkButton to={'bicicletas'}>Escolha a sua</LinkButton>
           </div>
-          <div>
+          <picture>
+            <source media='(max-width:800px)' srcSet={NimbusImg} />
             <img src={IntroducaoImg} alt='Bicicleta elétrica preta' />
-          </div>
+          </picture>
         </div>
       </Introduction>
       <Article>
@@ -52,7 +54,7 @@ const Home = () => {
             <LinkButton to={'bicicletas'}>Escolha um modelo</LinkButton>
             <div className='technology-benefits'>
               <div>
-                <img src={InconEletrica} alt='' />
+                <img src={InconEletrica} width='24' height='24' alt='' />
                 <h3>Motor Elétrico</h3>
                 <p>
                   Toda Bikcraft é equipada com um motor elétrico que possui duraçao de até 120h. A
@@ -60,7 +62,7 @@ const Home = () => {
                 </p>
               </div>
               <div>
-                <img src={InconRastreador} alt='' />
+                <img src={InconRastreador} width='24' height='24' alt='' />
                 <h3>Rastreador</h3>
                 <p>
                   Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e
@@ -70,7 +72,7 @@ const Home = () => {
             </div>
           </div>
           <div className='technology-img'>
-            <img src={TechnologyImg} alt='' />
+            <img src={TechnologyImg} width='1200' height='1920' alt='' />
           </div>
         </div>
       </Technology>
@@ -80,7 +82,12 @@ const Home = () => {
       </Partners>
       <Testimony aria-label='Depoimento'>
         <div>
-          <img src={DepoimentoImg} alt='Pessoa pedalando uma biciceta Bikcraft' />
+          <img
+            src={DepoimentoImg}
+            width='1560'
+            height='1360'
+            alt='Pessoa pedalando uma biciceta Bikcraft'
+          />
         </div>
         <div className='testimony-content'>
           <blockquote>
