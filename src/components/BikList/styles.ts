@@ -153,3 +153,14 @@ export const Ul = styled.ul`
     gap: 1.25rem;
   }
 `
+export const ListaBikBudget = styled.ul`
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  li img {
+    width: 1rem;
+    margin-right: 0.5rem;
+  }
+`
