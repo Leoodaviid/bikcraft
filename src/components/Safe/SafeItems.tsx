@@ -8,6 +8,7 @@ export interface SafeItemsProps {
   button?: string
 }
 export const SafeItems = ({ level, price, benefits, button }: SafeItemsProps) => {
+  const tipo = 'seguro'
   return (
     <>
       <Safe level={level}>
@@ -21,7 +22,7 @@ export const SafeItems = ({ level, price, benefits, button }: SafeItemsProps) =>
             <li key={benefit}>{benefit}</li>
           ))}
         </ul>
-        <LinkButton className={button} to='orcamento'>
+        <LinkButton className={button} to={`/orcamento/${tipo}/${level}`}>
           Inscreva-se
         </LinkButton>
       </Safe>
