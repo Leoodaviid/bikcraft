@@ -18,7 +18,7 @@ export const SafeBanner = () => {
           <BikText>
             Inscreva-se em um dos planos do nosso seguro Bikcraft e aproveite diversos beneficios.
           </BikText>
-          <LinkButton to='seguros'>Conheça Mais</LinkButton>
+          <LinkButton to='/seguros'>Conheça Mais</LinkButton>
         </div>
       </div>
     </Banner>
