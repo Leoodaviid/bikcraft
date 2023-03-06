@@ -5,18 +5,22 @@ import { Questions } from '../Helper/QuestionsList'
 export const QuestionList = () => {
   const [open, setOpen] = useState<number | boolean | null>(false)
 
-  const toggle = (index: number) => {
-    if (open === index) {
-      return setOpen(null)
+  const toggle = (pergunta: number) => {
+    if (open === pergunta) {
+      setOpen(null)
     }
-    setOpen(index)
+    setOpen(pergunta)
   }
 
   return (
     <Dl>
       {Questions.map(({ id, question, response }) => (
-        <Div key={id} onClick={() => toggle(id)}>
-          <dt>{question}</dt>
+        <Div key={id}>
+          <dt>
+            <button aria-expanded={id === open ? true : false} onClick={() => toggle(id)}>
+              {question}
+            </button>
+          </dt>
           {open === id ? <dd>{response}</dd> : null}
         </Div>
       ))}
