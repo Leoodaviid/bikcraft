@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Bik } from '../../components/Bik/Bik'
 import { BikListHome } from '../../components/BikList/BikListHome'
 import { BikSubTitle } from '../../components/BikTitle/BikSubTitle'
@@ -7,6 +8,10 @@ import { UseTitle } from '../../components/Title/useTitle'
 import { Article } from '../Home/styles'
 
 const Nebula = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <Head title='Nebula' />

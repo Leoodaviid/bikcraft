@@ -1,4 +1,5 @@
 import { createSearchParams, useSearchParams } from 'react-router-dom'
+import { useEffect } from 'react'
 import { Container } from './styles'
 import { Head } from '../../components/Head/Head'
 import { UseTitle } from '../../components/Title/useTitle'
@@ -9,6 +10,10 @@ import { Button } from '../../components/Button/styles'
 import BikList from '../../components/BikList/BikList'
 
 const Orcamento = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   const [searchParams, setSearchParams] = useSearchParams()
 
   const tipo = searchParams.get('tipo')

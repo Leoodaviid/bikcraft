@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Article } from '../Home/styles'
 import { Bik } from '../../components/Bik/Bik'
 import { Head } from '../../components/Head/Head'
@@ -7,6 +8,10 @@ import { BikListHome } from '../../components/BikList/BikListHome'
 import { SafeBanner } from '../../components/Safe/SafeBanner'
 
 const Magic = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <Head title='Magic' />

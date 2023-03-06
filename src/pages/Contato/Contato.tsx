@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Container, Form, Article } from './styles'
 import { Head } from '../../components/Head/Head'
 import { UseTitle } from '../../components/Title/useTitle'
@@ -13,6 +14,10 @@ import RjImg from '../../assets/img/rj.jpg'
 import SpImg from '../../assets/img/sp.jpg'
 
 const Contato = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <Head title='Contato' />

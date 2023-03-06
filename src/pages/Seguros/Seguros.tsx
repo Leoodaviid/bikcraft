@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Head } from '../../components/Head/Head'
 import { UseTitle } from '../../components/Title/useTitle'
 import { Safe } from '../Home/styles'
@@ -8,6 +9,10 @@ import { BenefitsList } from '../../components/BenefitsList/BenefitsList'
 import { QuestionList } from '../../components/QuestionList/QuestionList'
 
 const Seguros = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <Head title='Seguros' />

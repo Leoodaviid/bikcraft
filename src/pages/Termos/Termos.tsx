@@ -1,8 +1,13 @@
+import { useEffect } from 'react'
 import { Head } from '../../components/Head/Head'
 import { UseTitle } from '../../components/Title/useTitle'
 import { Container } from './styles'
 
 const Termos = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <>
       <Head title='Termos' description='Termos e condições.' />
