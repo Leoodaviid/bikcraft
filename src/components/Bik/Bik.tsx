@@ -1,13 +1,14 @@
 import { Container } from './styles'
+import { BikText } from '../BikTitle/BikText'
 import { Biks } from '../Helper/BikImg'
 import { LinkButton } from '../LinkButton/LinkButton'
+import { MouseEvent, useEffect, useState } from 'react'
 import EntregaIcon from '../../assets/icons/entrega.svg'
 import EstoqueIcon from '../../assets/icons/estoque.svg'
 import InconEletrica from '../../assets/icons/eletrica.svg'
 import InconCarbono from '../../assets/icons/carbono.svg'
 import InconVelocidade from '../../assets/icons/velocidade.svg'
 import InconRastreador from '../../assets/icons/rastreador.svg'
-import { BikText } from '../BikTitle/BikText'
 
 interface BikProps {
   BikNumber: number
@@ -17,12 +18,27 @@ interface BikProps {
 }
 
 export const Bik = ({ BikNumber, name, nickname, km }: BikProps) => {
+  const [container, setContainer] = useState<Element | null>()
+
+  useEffect(() => {
+    const galery = document.querySelector('.bik-images')
+    setContainer(galery)
+  }, [])
+
+  const changeImage = ({ target }: MouseEvent) => {
+    const img = target as Node
+    const media = matchMedia('(min-width: 930px)').matches
+
+    if (container && media) {
+      container.prepend(img)
+    }
+  }
   return (
     <Container>
       <div className='bik container'>
         <div className='bik-images'>
           {Biks.map(({ id, img }) => (
-            <img key={id} src={img[BikNumber]} alt='' />
+            <img onClick={changeImage} key={id} src={img[BikNumber]} alt='' />
           ))}
         </div>
         <div className='bik-content'>
