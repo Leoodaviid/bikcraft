@@ -22,7 +22,7 @@ export function AppRoutes() {
         <Route path='seguros' element={<Seguros />} />
         <Route path='contato' element={<Contato />} />
         <Route path='termos' element={<Termos />} />
-        <Route path={`orcamento/:tipo/:produto`} element={<Orcamento />} />
+        <Route path='orcamento' element={<Orcamento />} />
       </Route>
     </Routes>
   )

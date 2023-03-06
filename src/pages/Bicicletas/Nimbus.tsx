@@ -11,7 +11,7 @@ const Nimbus = () => {
     <>
       <Head title='Nimbus' />
       <UseTitle />
-      <Bik BikNumber={0} name={'Nimbus Stark'} km={50} />
+      <Bik BikNumber={0} name={'Nimbus Stark'} nickname='nimbus' km={50} />
       <Article>
         <BikSubTitle className='container'>Escolha a sua</BikSubTitle>
         <BikListHome />

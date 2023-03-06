@@ -22,7 +22,7 @@ export const SafeItems = ({ level, price, benefits, button }: SafeItemsProps) =>
             <li key={benefit}>{benefit}</li>
           ))}
         </ul>
-        <LinkButton className={button} to={`/orcamento/${tipo}/${level}`}>
+        <LinkButton className={button} to={`/orcamento?tipo=${tipo}&produto=${level}`}>
           Inscreva-se
         </LinkButton>
       </Safe>

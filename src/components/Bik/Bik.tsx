@@ -12,10 +12,11 @@ import { BikText } from '../BikTitle/BikText'
 interface BikProps {
   BikNumber: number
   name: string
+  nickname: string
   km: number
 }
 
-export const Bik = ({ BikNumber, name, km }: BikProps) => {
+export const Bik = ({ BikNumber, name, nickname, km }: BikProps) => {
   return (
     <Container>
       <div className='bik container'>
@@ -30,7 +31,9 @@ export const Bik = ({ BikNumber, name, km }: BikProps) => {
             melhores acessórios, o que garante maior velocidade.
           </BikText>
           <div className='bik-sale'>
-            <LinkButton to='/orcamento'>Comprar agora</LinkButton>
+            <LinkButton to={`/orcamento?tipo=bikcraft&produto=${nickname}`}>
+              Comprar agora
+            </LinkButton>
             <span>
               <img src={EntregaIcon} /> entrega em 5 dias
             </span>

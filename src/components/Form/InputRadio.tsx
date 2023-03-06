@@ -7,6 +7,7 @@ interface InputRadioProps {
   placeholder?: string
   type?: string
   value?: string
+  checked?: boolean
   onChange?: (event: ChangeEvent<HTMLInputElement>) => void
   onBlur?: (event: FocusEvent<HTMLInputElement>) => void
   price?: string
@@ -18,6 +19,7 @@ export const InputRadio = ({
   placeholder,
   type,
   value,
+  checked,
   onChange,
   onBlur,
   price,
@@ -31,6 +33,7 @@ export const InputRadio = ({
         placeholder={placeholder}
         type={type}
         value={value}
+        checked={checked}
         onChange={onChange}
         onBlur={onBlur}
         {...rest}

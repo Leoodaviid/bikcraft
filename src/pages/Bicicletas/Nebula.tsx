@@ -11,7 +11,7 @@ const Nebula = () => {
     <>
       <Head title='Nebula' />
       <UseTitle />
-      <Bik BikNumber={2} name={'Nebula Cosmic'} km={40} />
+      <Bik BikNumber={2} name={'Nebula Cosmic'} nickname='nebula' km={40} />
       <Article>
         <BikSubTitle className='container'>Escolha a sua</BikSubTitle>
         <BikListHome />

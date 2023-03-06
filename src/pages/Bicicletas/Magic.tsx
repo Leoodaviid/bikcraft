@@ -11,7 +11,7 @@ const Magic = () => {
     <>
       <Head title='Magic' />
       <UseTitle />
-      <Bik BikNumber={1} name={'Magic Might'} km={45} />
+      <Bik BikNumber={1} name={'Magic Might'} nickname='magic' km={45} />
       <Article>
         <BikSubTitle className='container'>Escolha a sua</BikSubTitle>
         <BikListHome />
