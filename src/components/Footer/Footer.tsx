@@ -9,7 +9,9 @@ const Footer = () => {
   return (
     <Container>
       <div className='footer container'>
-        <img src={BikcraftIcon} width='136' height='32' alt='Bikcraft' />
+        <Link to={'/'}>
+          <img src={BikcraftIcon} width='136' height='32' alt='Bikcraft' />
+        </Link>
         <div className='contact'>
           <h3>Contato</h3>
           <ul>
