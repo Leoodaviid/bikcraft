@@ -17,7 +17,10 @@ import InconRastreador from '../../assets/icons/rastreador.svg'
 const Home = () => {
   return (
     <>
-      <Head title='Bicicletas sob medida' />
+      <Head
+        title='Bicicletas sob medida'
+        description='Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.'
+      />
       <Introduction aria-label='Introdução'>
         <div className='introducao container'>
           <div className='introducao-content'>
